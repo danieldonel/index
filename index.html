@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chocolate
+        {
+            position: absolute;
+            top: -20px;
+            animation: derretendo 8s linear ;
+        }
+
+        @keyframes derretendo
+        {
+            0% {top: -80px;}
+            100% {top: -20px;}
+        }
+
+        .div2
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .animacao
+        {
+            margin-top: 150px;
+            margin-left: -40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            animation: jackInTheBox 2s;
+        }
+
+        .carregando{
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: 8px solid rgb(1, 123, 129);
+            border-top: 8px solid transparent;
+            border-radius: 50%;
+            margin-left: -30px;
+            margin-top: 15px;
+            animation: loading 1.5s infinite linear; 
+        }
+
+        @keyframes loading{
+
+            0% {rotate: 0deg;}
+            100% {rotate: 360deg;}
+
+        }
+
+        .abelha {
+            position: absolute;
+            left: 0px;  
+            top: 300px;
+            animation: anima_abelha 5s infinite linear;
+            
+        }
+
+        @keyframes anima_abelha
+        {
+            0%   { left: -50px; top: 600px;}
+            100% {left: 400px; top: 600px;}
+        }
+    </style>
+</head>
+<body>
+    <img src="chocolate.png" class="chocolate" width="480px">
+
+<div class="div2">
+    <div class="animacao">
+        <img src="cupcake.png" width="200px">
+    <img src="Titulo2.png" width="300px">
+    </div>
+    <div class="carregando"></div>
+</div>
+
+<img src="abelha.gif" class="abelha" width="60px">
+
+
+</body>
+</html>
